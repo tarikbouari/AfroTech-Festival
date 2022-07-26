@@ -22,23 +22,25 @@ body {
 a {
   text-decoration: none;
 }
- /* plain css ****/
+/* plain css ****/
 
- .navigation{
+.navigation{
   background-color: #fff;
   box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.25);
   width: 100%;
   z-index: 1;
   top: 0;
   left: 0;
- height: 70px;
- position: fixed;
+  height: 120px;
+  position: fixed;
+  padding: 1rem;
+  
 }
 
 .banner{
   padding-top: 10rem;
 }
- .icon {
+.icon {
   height: 50px;
   width: 50px;
 }
@@ -89,8 +91,8 @@ a {
 
 .box-program span {
   font-family: 'Lato', sans-serif;
-    color: #ec5242;
-    margin-left: 14px;
+  color: #ec5242;
+  margin-left: 14px;
   
 }
 
@@ -147,14 +149,14 @@ h2,h3,h4,h5{
 }
 .image::after {
   
-   content: "   ";
-   position:absolute;
-   top:0;
-   left:0;
-   width: 100%;
-   height: 100%;
-   background-color: #ec5242;
-   opacity: 0.4;
+  content: "   ";
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: #ec5242;
+  opacity: 0.4;
 }
 
 .image::after :first-child {
@@ -219,7 +221,7 @@ h2,h3,h4,h5{
 
   .icon{
     height: 70px;
-  width: 70px;
+    width: 70px;
   }
   
   .line{
@@ -232,37 +234,76 @@ h2,h3,h4,h5{
   .arrow-down {
     display: none;
 
-}
+  }
 
-.box-program{
-  background-color: #3C3F46 ;
-  font-size: 1.3rem;
+  .box-logo{
+    display: flex;
+    gap:1rem;
+  }
+
+  .box-menu {
+    display: flex;
+    gap:1rem;
+  }
+
+  .box-program{
+    background-color: #3C3F46 ;
+    font-size: 1.3rem;
   
-}
+  }
 
-.btn-primary {
-  display: none;
-  font-size: 1rem;
-  background-color: #ec5242;
-}
+  .btn-primary {
+    display: none;
+    font-size: 1rem;
+    background-color: #ec5242;
+  }
 
-.link{
-  text-decoration: underline;
-  color: #fff;
-}
+  .link{
+    text-decoration: underline;
+    color: #fff;
+  }
 
-.program {
-  background-color: #272a31;
-  color: #fff;
-  padding: 6rem 0;
+  .program {
+    background-color: #272a31;
+    color: #fff;
+    padding: 6rem 0;
   
-}
+  }
 
-.banner {
-  padding:  10rem 6rem;
-  height: 47rem;
-}
-banner p{
+  .banner {
+    padding:  10rem 6rem;
+    height: 47rem;
+  }
+  .banner p{
 
-}
+  }
+
+  .head{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: space-around;  
+    align-items: center;
+  }
+
+  .navigation .hamburger {
+    /* display: none; */
+  }
+
+  .navigation .nav-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    align-items: center;
+    
+  }
+  .navigation .nav-logo {
+    width: 80%;
+    height: auto;
+  }
 }
