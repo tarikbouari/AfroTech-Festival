@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,900;1,400&family=Roboto:wght@300;500;700&display=swap');
+
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -47,8 +47,6 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
-  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -10837,8 +10835,8 @@ textarea.form-control-lg {
 
 /*# sourceMappingURL=bootstrap.css.map */
 
-/* plain css ****/
-
+/*plain css ***/
+/* 
 .icon {
   height: 50px;
   width: 50px;
@@ -10860,8 +10858,8 @@ textarea.form-control-lg {
   color: #fff;
 }
 .icon2 {
-  width: 30px;
-  height: 30px;
+  width: 45%;
+  height: auto;
   color: #fff;
   
 }
@@ -10889,6 +10887,7 @@ textarea.form-control-lg {
 .box-program span {
   font-family: 'Lato', sans-serif;
     color: #ec5242;
+    margin-left: 14px;
   
 }
 
@@ -10969,3 +10968,19 @@ h2,h3,h4,h5{
   font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
+
+.navigation{
+  background-color: #fff;
+  box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.25);
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+ height: 70px;
+ position: fixed;
+}
+
+.banner{
+  padding-top: 10rem;
+}
+ */

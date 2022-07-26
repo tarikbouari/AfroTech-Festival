@@ -1,29 +1,268 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Roboto:wght@300;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Roboto:wght@300;500;700&display=swap'); */
 @import url('css/bootstrap.css');
+
 *{
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #d3d3d3;
+
+body {
+  font-family: 'Lato' , sans-serif;
+  font-size: 1rem;
 }
 
-.navigation {
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  width: 100%;
-  height: 100px;
+.btn-primary {
+  
+  font-size: 1rem;
+  background-color: #ec5242;
+}
+
+a {
+  text-decoration: none;
+}
+ /* plain css ****/
+
+ .navigation{
   background-color: #fff;
+  box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.25);
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+ height: 70px;
+ position: fixed;
+}
+
+.banner{
+  padding-top: 10rem;
+}
+ .icon {
+  height: 50px;
+  width: 50px;
+}
+.program {
+  background-color: #272a31;
+  color: #fff;
   
 }
-.navigation .icon {
+
+.line{
+  width: 15%;
+  height: 3px;
+  margin: 0 auto;
+  background-color: #ec5242;
+}
+
+.patners {
+  background-color:#272a31;
+  color: #fff;
+}
+
+.icon2 {
+  width: 25%;
+  height: auto;
+  color: #fff;
+  
+}
+
+.lines {
+  width: 15%;
+  height: 3px;
+  background-color: #d3d3d3;
+  position: relative;
+  top: 0.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.img-profile {
+  
+  width: 100px;
+  height: 100px;
+}
+
+.box-program{
+  background-color: #3C3F46 ;
+  
+}
+
+.box-program span {
+  font-family: 'Lato', sans-serif;
+    color: #ec5242;
+    margin-left: 14px;
+  
+}
+
+.sm-red {
+  color: #ec5242;
+}
+
+.arrow-down {
+  border: 1px solid #d3d3d3;
+  padding: 0.5rem;
+}
+
+.banner h2 {
+  font-weight: 900;
+  font-size: 700;
 
 }
-.icon {
-    height: 50px;
-    width: 50px;
+
+.banner h1 {
+  font-weight: 900;
+  font-size: 700;
+  color: #ec5242;
 }
 
+.text {
+  border: 1px solid #d3d3d3;
+  padding: 1rem;
+}
+.text1 {
+  border: 1px solid #d3d3d3;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+header, .banner {
+  background-color: #F7F7F7;
+}
+
+h2,h3,h4,h5{
+  text-transform: capitalize;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+.div-logo {
+  border: 1px solid #f3f3f3;
+}
+
+.image {
+  position: relative;
+}
+.image::after {
+  
+   content: "   ";
+   position:absolute;
+   top:0;
+   left:0;
+   width: 100%;
+   height: 100%;
+   background-color: #ec5242;
+   opacity: 0.4;
+}
+
+.image::after :first-child {
+  position: absolute;
+  content: " 2019 ";
+  content: "  AfroTech Festival 2019 in Acrra Ghana";
+  text-align: center;
+  color: #fff;
+  font-size: xx-large;
+  padding: 5rem;
+  text-transform: capitalize;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.logo-partner {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-weight: 600;
+  align-items: center;
+}
+
+.speakers   {
+  display: flex;
+  flex-direction: column;
+}
+
+.speaker-box {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+  
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+  body {
+    font-size: 1.5rem;
+  }
+
+  .logo-partner {
+    display: flex;
+    justify-content: center;
+    column-gap: 7rem;
+    flex-wrap: wrap;
+    
+  }
+
+  .icon{
+    height: 70px;
+  width: 70px;
+  }
+  
+  .line{
+    width: 5%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #ec5242;
+  }
+
+  .arrow-down {
+    display: none;
+
+}
+
+.box-program{
+  background-color: #3C3F46 ;
+  font-size: 1.3rem;
+  
+}
+
+.btn-primary {
+  display: none;
+  font-size: 1rem;
+  background-color: #ec5242;
+}
+
+.link{
+  text-decoration: underline;
+  color: #fff;
+}
+
+.program {
+  background-color: #272a31;
+  color: #fff;
+  padding: 6rem 0;
+  
+}
+
+.banner {
+  padding:  10rem 6rem;
+  height: 47rem;
+}
+banner p{
+
+}
+}
