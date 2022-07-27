@@ -136,13 +136,21 @@ a {
 }
 
 .text {
+  width: 70%  ;
+  
+}
+.div-exhibit{
   border: 1px solid #d3d3d3;
-  padding: 1rem;
+  padding: 0.7rem 0.7rem;
+  width: 49%;
+
+  background-color: #F7F7F7;
 }
 .text1 {
   border: 1px solid #d3d3d3;
   padding: 1rem;
   background-color: #fff;
+
 }
 
 .bg-white {
@@ -424,9 +432,7 @@ h2,h3,h4,h5{
     padding:  10rem 6rem;
     
   }
-  .banner p{
-    max-width: 50%;
-  }
+xt
 
   .grid-speaker{
     display: grid;
@@ -470,7 +476,7 @@ h2,h3,h4,h5{
    {
      padding: 2rem;
      font-size: 1rem;
-     width: 60%;
+     width: 50%;
   }
   
   .about .text2

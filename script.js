@@ -44,7 +44,7 @@ let speaker = [
     { 
         image : 'images/rik.jpg',
         name: 'Lesley hae',
-        profession: 'Ceo of Ecobranch',
+        profession: 'Ceo of Africa Electronics Developers ',
         details:'Magna reprehenderit id eu sit enim ex. Id minim ess'
 
     },
