@@ -9,30 +9,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-  <header>
+  <header class="py-5">
+   
     <nav class="navigation " id="nav-bar" >
-      <div class="box-logo">
-        <img src="./images/menu.svg" class="icon hamburger">
-        <a href=""><img src="./images/afro tech large.svg" class="nav-logo" alt="logo"></a>
+      <div class="container-fluid bg-socialbox">
+        <div class="social-box container"> 
+          <img src="./images/facebook (1).svg"  class="social-icon"  alt="">
+          <img src="./images/twitter-fill.svg" alt="" class="social-icon">
+          <span class="text-social">English</span>
+          <span class="text-social">My page</span>
+          <span class="text-social">Logout</span>
+        </div>
       </div>
-      <div class="box-menu">
-        <ul class="nav-list mb-0">
-          <li>About</li>
-          <li>Program</li>
-          <li>Join</li>
-          <li>Sponsor</li>
-          <li>News</li>
-        </ul>  
-        <span class="fw-bold campain"> CC Campain</span>
+      
+
+      <div class="navigate container">
+
+        <div class="box-logo">
+          <img src="./images/menu.svg" class="icon hamburger">
+          <a href=""><img src="./images/afro tech large.svg" class="nav-logo" alt="logo"></a>
+        </div>
+        <div class="box-menu">
+          <ul class="nav-list mb-0">
+            <li>About</li>
+            <li>Program</li>
+            <li>Join</li>
+            <li>Sponsor</li>
+            <li>News</li>
+          </ul>  
+          <span class="fw-bold campain"> CC Campain</span>
+        </div>
       </div>
+      
          
     </nav>
   </header>
+
   <main >
     <section class="banner container-fluid" id="presentation" >
       <div class="container head">
         <h1 class="healine  text-wrap"> AFRICA TECH FESTIVAL AND EXPOSITION</h1>
-      <p class="text my-3 col-md-6   p-3">Dolore ad sint labore sit ex ipsum voluptate ullamco culpa esse sit consequat. Commodo officia dolor enim eiusmod adipisicing dolor. .</p>
+      <p class="text my-3 p-3">Dolore ad sint labore sit ex ipsum voluptate ullamco culpa esse sit consequat. Commodo officia dolor enim eiusmod adipisicing dolor. .</p>
       <div>
         <h2 class="my-3">2015.10.15(THU) ~ 18(FRI)</h2>
         <p>national musuel of korea . Art center nabi and more</p>
@@ -42,7 +59,8 @@
       
     </section> 
 
-    <section class=" container-fluid program my-5  text-center ">
+    <section class=" container-fluid program my-5 py-3 text-center ">
+      <div class="section-program container-md p-md-5">
       <h2 class="py-3">Main Program</h2>
       <div class="line my-3"> </div>
 
@@ -143,6 +161,7 @@
       
       <button class=" btn-first btn my-3 py-3 px-5 mt-4"> Join AfroTech expo</button>
       <a class=" link text-center"> See the whole program</a>
+    </div>
     </section>
 
     <!--               SECTION SPEAKER *************************************** -->
