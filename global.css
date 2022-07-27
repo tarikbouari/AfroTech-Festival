@@ -1,6 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,400&family=Roboto:wght@300;500;700&display=swap'); */
+
 @import url('css/bootstrap.css');
-@import url('about.css');
+/* @import url('desktop.css'); */
 
 *{
   margin: 0;
@@ -8,7 +8,9 @@
   box-sizing: border-box;
 }
 
-
+ul li{
+  list-style: none;
+}
 body {
   font-family: 'Lato' , sans-serif;
   font-size: 1rem;
@@ -22,7 +24,9 @@ body {
 
 a {
   text-decoration: none;
+  
 }
+
 
 .social-icon {
   width: 20px;
@@ -163,7 +167,7 @@ h2,h3,h4,h5{
 }
 .image::after {
   
-  content: "   ";
+  content: " ";
   position:absolute;
   top:0;
   left:0;
@@ -224,6 +228,47 @@ h2,h3,h4,h5{
   display: none;
 }
 
+.active-nav {
+  display: block;
+  background-color: #272a31;
+  position: absolute;
+  top:0;
+  width: 100%;
+  left:0;
+  height: 100vh;
+  padding: 0;
+  transition: left 0.3s;
+  /* padding: 1rem; */
+  
+}
+
+.active-nav li {
+  padding: 1rem;
+  color:white;  
+}
+
+.nav-list li {
+  padding: 1rem; 
+}
+
+.close-active {
+  position: absolute;
+  top: 20px;
+  z-index: 5;
+  right:34px;
+  width: 30px;
+  height: 30px;
+}
+
+.closebtn {
+  visibility: hidden ;
+}
+
+
+.active-nav li:hover {
+  background-color: #ec5342c4;
+}
+
 .campain {
   display: none;
 }
@@ -246,7 +291,7 @@ h2,h3,h4,h5{
   background-color: #fff ;
 }
   
-/* Medium devices (tablets, 768px and up)*/
+ /*Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
 
   body {
@@ -282,7 +327,7 @@ h2,h3,h4,h5{
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
     
   }
@@ -341,7 +386,7 @@ h2,h3,h4,h5{
 
   .box-menu {
     display: flex;
-    gap:7rem;
+    gap:3rem;
   }
 
   .campain {
@@ -381,6 +426,11 @@ h2,h3,h4,h5{
   }
   .banner p{
     max-width: 50%;
+  }
+
+  .grid-speaker{
+    display: grid;
+    grid-template-columns: auto auto;
   }
 
   /* about page **/
@@ -435,7 +485,6 @@ h2,h3,h4,h5{
 
   .text {
     font-size: 1rem;
-    background-color: #fff;
   }
 
   .textlogo {
