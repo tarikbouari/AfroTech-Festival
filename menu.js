@@ -7,12 +7,12 @@ menu.addEventListener('click', () => {
   closeBtn.classList.add('close-active');
   closeBtn.style.visibility = 'visible';
   // navList.style.transition = ".5s";
-  navList.style.width= "100%";
+  navList.style.width = '100%';
 });
 
 closeBtn.addEventListener('click', () => {
   navList.classList.remove('active-nav');
   closeBtn.style.visibility = 'hidden';
   closeBtn.classList.remove('close-active');
-  navList.style.width= "0";
+  navList.style.width = '0';
 });

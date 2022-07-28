@@ -51,7 +51,6 @@ const speaker = [
 ];
 
 const grid = document.getElementById('grid-speaker');
-const ctnGrid = document.getElementById('ctn-grid-speaker');
 
 function loadSpeakers() {
   const speakers = speaker.map((item) => `<div class='speaker-box py-3'>

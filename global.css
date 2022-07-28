@@ -1,42 +1,41 @@
 
 @import url('css/bootstrap.css');
+
 /* @import url('desktop.css'); */
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-ul li{
+ul li {
   list-style: none;
 }
+
 body {
-  font-family: 'Lato' , sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1rem;
 }
 
 .btn-primary {
-  
   font-size: 1rem;
   background-color: #ec5242;
 }
 
 a {
   text-decoration: none;
-  transition:color 0.2s;
-  color:#fefeff;
+  transition: color 0.2s;
+  color: #fefeff;
 }
 
-a:hover{
+a:hover {
   color: #ec5242;
 }
 
-
-
 /* plain css ****/
 
-.navigation{
+.navigation {
   background-color: #fff;
   box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.25);
   width: 100%;
@@ -46,27 +45,27 @@ a:hover{
   height: 80px;
   position: fixed;
   padding: 1rem;
-  
 }
 
 .social-box {
   display: none;
 }
 
-.banner{
+.banner {
   padding: 5rem 0;
 }
+
 .icon {
   height: 50px;
   width: 50px;
 }
+
 .program {
   background-color: #272a31;
   color: #fff;
-  
 }
 
-.line{
+.line {
   width: 15%;
   height: 3px;
   margin: 0 auto;
@@ -74,7 +73,7 @@ a:hover{
 }
 
 .patners {
-  background-color:#272a31;
+  background-color: #272a31;
   color: #fff;
 }
 
@@ -82,7 +81,6 @@ a:hover{
   width: 25%;
   height: auto;
   color: #fff;
-  
 }
 
 .lines {
@@ -95,14 +93,12 @@ a:hover{
 }
 
 .img-profile {
-  
   width: 100px;
   height: 100px;
 }
 
-.box-program{
-  background-color: #3C3F46 ;
-  
+.box-program {
+  background-color: #3c3f46;
 }
 
 .mail {
@@ -114,7 +110,6 @@ a:hover{
   font-family: 'Lato', sans-serif;
   color: #ec5242;
   margin-left: 14px;
-  
 }
 
 .sm-red {
@@ -126,10 +121,17 @@ a:hover{
   padding: 0.5rem;
 }
 
+h2,
+h3,
+h4,
+h5 {
+  text-transform: capitalize;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
 .banner h2 {
   font-weight: 900;
-  font-size: 700;
-
 }
 
 .banner h1 {
@@ -138,19 +140,19 @@ a:hover{
 }
 
 .text {
-  width: 70%  ;
-  
+  width: 70%;
 }
-.div-exhibit{
+
+.div-exhibit {
   border: 3px solid #d6d6d6;
   padding: 0.7rem 0.7rem;
   width: 100%;
 }
+
 .text1 {
   border: 1px solid #d3d3d3;
   padding: 1rem;
   background-color: #fff;
-
 }
 
 .bg-white {
@@ -158,15 +160,11 @@ a:hover{
   border-bottom: 1px solid rgba(60, 63, 70, 0.208);
 }
 
-header, .banner {
-  background-color: #F7F7F7;
+header,
+.banner {
+  background-color: #f7f7f7;
 }
 
-h2,h3,h4,h5{
-  text-transform: capitalize;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-}
 .div-logo {
   border: 1px solid #f3f3f3;
 }
@@ -212,7 +210,7 @@ h2,h3,h4,h5{
   align-items: center;
 }
 
-.speakers   {
+.speakers {
   display: flex;
   flex-direction: column;
 }
@@ -227,11 +225,12 @@ h2,h3,h4,h5{
   width: 100%;
   height: auto;
 }
-.nav-logo{
+
+.nav-logo {
   display: none;
 }
 
-.nav-list{
+.nav-list {
   display: none;
 }
 
@@ -239,49 +238,44 @@ h2,h3,h4,h5{
   display: block;
   background-color: #272a31;
   position: absolute;
-  top:0;
+  top: 0;
   width: 0;
-  left:0;
+  left: 0;
   height: 100vh;
-  padding: 0;
   overflow-x: hidden;
   transition: 0.5s;
   padding: 1rem 0.5rem;
-   
 }
 
 .active-nav li {
   padding: 2rem 1rem;
-  color:white;  
+  color: white;
   font-size: 1.5rem;
   transition: 0.5s;
 }
-
-
 
 .close-active {
   position: absolute;
   top: 20px;
   z-index: 5;
-  right:34px;
+  right: 34px;
   width: 30px;
   height: 30px;
 }
 
 .closebtn {
-  visibility: hidden ;
+  visibility: hidden;
 }
-
 
 .active-nav li:hover {
   background-color: #ec5342c4;
-  
 }
 
 .campain {
   display: none;
 }
-.link{
+
+.link {
   display: none;
 }
 
@@ -291,45 +285,42 @@ h2,h3,h4,h5{
   background-color: #ec5242;
 }
 
-.patners-about{
+.patners-about {
   display: block;
-  background-color: #272a31 
+  background-color: #272a31;
 }
 
 .footer-about {
-  background-color: #fff ;
+  background-color: #fff;
 }
 
 .logo-white {
-  display: none; 
+  display: none;
 }
 
-  
- /*Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
-
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   body {
     font-size: 1.2rem;
   }
 
-
-  .head{
+  .head {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
   }
 
   .navigation {
-   display: flex;
-   flex-direction: column;
-   gap:1rem;
-   height: auto;
-   padding: 0 0 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+    padding: 0 0 0.5rem 0;
   }
+
   .navigate {
     display: flex;
-    justify-content: space-between;  
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -343,62 +334,57 @@ h2,h3,h4,h5{
     list-style: none;
     gap: 2rem;
     align-items: center;
-    
   }
 
   .nav-list li {
-    padding: 1rem; 
+    padding: 1rem;
   }
 
-  
-a {
-  text-decoration: none;
-  transition:color 0.2s;
-  color: #272a31;
-}
+  a {
+    text-decoration: none;
+    transition: color 0.2s;
+    color: #272a31;
+  }
 
-a:hover{
-  color: #ec5242;
-}
+  a:hover {
+    color: #ec5242;
+  }
 
-
-  .navigation .nav-list li{
+  .navigation .nav-list li {
     transition: 6ms all ease;
     cursor: pointer;
   }
-  
+
   .navigation .nav-logo {
     width: 70%;
     height: auto;
     display: block;
   }
 
-.banner h1 {
-  font-weight: 900;
-  font-size: 7vmin;
-  max-width: 60%;
-  color: #ec5242;
-  
-}
-.div-exhibit{
-  width: 49%;
-}
+  .banner h1 {
+    font-weight: 900;
+    font-size: 7vmin;
+    max-width: 60%;
+    color: #ec5242;
+  }
 
+  .div-exhibit {
+    width: 49%;
+  }
 
   .logo-partner {
     display: flex;
     justify-content: center;
     column-gap: 7rem;
     flex-wrap: wrap;
-    
   }
 
-  .icon{
+  .icon {
     height: 70px;
     width: 70px;
   }
-  
-  .line{
+
+  .line {
     width: 5%;
     height: 3px;
     margin: 0 auto;
@@ -407,17 +393,16 @@ a:hover{
 
   .arrow-down {
     display: none;
-
   }
 
-  .box-logo{
+  .box-logo {
     display: flex;
     gap: 1rem;
   }
 
   .box-menu {
     display: flex;
-    gap:3rem;
+    gap: 3rem;
   }
 
   .campain {
@@ -426,10 +411,9 @@ a:hover{
     display: block;
   }
 
-  .box-program{
-    background-color: #3C3F46 ;
+  .box-program {
+    background-color: #3c3f46;
     font-size: 1rem;
-  
   }
 
   .btn-first {
@@ -438,7 +422,7 @@ a:hover{
     background-color: #ec5242;
   }
 
-  .link{
+  .link {
     display: inline-block;
     text-decoration: underline;
     color: #fff;
@@ -447,19 +431,19 @@ a:hover{
   .program {
     background-color: #272a31;
     color: #fff;
+
     /* padding: 6rem 0; */
-  
   }
 
   .banner {
-    padding:  10rem 6rem;
+    padding: 10rem 6rem;
     background: linear-gradient(to right, rgba(255, 255, 255, 0.887), rgba(191, 141, 141, 0.601)), url('./images/alex.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  .grid-speaker{
+  .grid-speaker {
     display: grid;
     grid-template-columns: auto auto;
   }
@@ -469,18 +453,20 @@ a:hover{
     height: 20px;
     transition: color 0.2s;
   }
-  
+
   .social-icon:hover {
     color: #ec5242;
   }
 
-  .text-social{
+  .text-social {
     cursor: pointer;
     transition: color 0.2s;
   }
-  .text-social:hover{
+
+  .text-social:hover {
     color: #ec5242;
   }
+
   /* about page **/
 
   .eventpic-box {
@@ -489,11 +475,12 @@ a:hover{
     gap: 1rem;
     padding: 1rem 10rem;
   }
+
   .footer-about {
-    background-color: #272a31 ;
+    background-color: #272a31;
   }
 
-  .patners-about{
+  .patners-about {
     display: none;
   }
 
@@ -501,34 +488,31 @@ a:hover{
     color: #fff;
   }
 
-  .gallery{
+  .gallery {
     padding: 3rem 0;
   }
 
-  .div-logo{
-   
+  .div-logo {
     width: 50%;
     margin: 0 auto;
   }
 
-  .div-logo:hover{
+  .div-logo:hover {
     outline: 1px solid #3c3f463d;
   }
-  .about .text1
-   {
-     padding: 2rem;
-     font-size: 1rem;
-     width: 50%;
-  }
-  
-  .about .text2
-   {
-     padding-top: 2rem;
+
+  .about .text1 {
+    padding: 2rem;
+    font-size: 1rem;
+    width: 50%;
   }
 
-  .about .div
-   {
-     padding-top: 3rem;
+  .about .text2 {
+    padding-top: 2rem;
+  }
+
+  .about .div {
+    padding-top: 3rem;
   }
 
   .text {
@@ -539,19 +523,20 @@ a:hover{
     font-size: 1rem;
   }
 
-  .social-box{
+  .social-box {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 2rem;
     color: #fff;
     font-size: 0.8rem;
-    padding: 0.5rem 1rem 0.5rem 1rem;    
+    padding: 0.5rem 1rem 0.5rem 1rem;
   }
 
   .bg-socialbox {
     background-color: #272a31;
   }
+
   /* .logo-back{
     visibility:hidden;
   }
