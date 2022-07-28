@@ -142,11 +142,9 @@ a:hover{
   
 }
 .div-exhibit{
-  border: 1px solid #d3d3d3;
+  border: 3px solid #d6d6d6;
   padding: 0.7rem 0.7rem;
   width: 100%;
-
-  background-color: #F7F7F7;
 }
 .text1 {
   border: 1px solid #d3d3d3;
@@ -455,7 +453,7 @@ a:hover{
 
   .banner {
     padding:  10rem 6rem;
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.887), rgba(255, 255, 255, 0.601)), url('./images/alex.jpg');
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.887), rgba(191, 141, 141, 0.601)), url('./images/alex.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -474,8 +472,8 @@ a:hover{
   
   .social-icon:hover {
     color: #ec5242;
-
   }
+
   .text-social{
     cursor: pointer;
     transition: color 0.2s;

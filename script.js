@@ -25,15 +25,15 @@ const speaker = [
   },
 
   {
-    image: 'images/rik.jpg',
-    name: 'Moussa Diang',
+    image: 'images/aida.jpg',
+    name: 'Ria Diang',
     profession: 'Content writter at Freecodecamp',
     details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
 
   },
 
   {
-    image: 'images/rik.jpg',
+    image: 'images/michel.jpg',
     name: 'David simth',
     profession: ' Software developper at Squarecode',
     details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
@@ -41,7 +41,7 @@ const speaker = [
   },
 
   {
-    image: 'images/rik.jpg',
+    image: 'images/reane.jpg',
     name: 'Lesley hae',
     profession: 'Ceo of Africa Electronics Developers',
     details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
