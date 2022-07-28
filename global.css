@@ -24,14 +24,16 @@ body {
 
 a {
   text-decoration: none;
-  
+  transition:color 0.2s;
+  color:#fefeff;
+}
+
+a:hover{
+  color: #ec5242;
 }
 
 
-.social-icon {
-  width: 20px;
-  height: 20px;
-}
+
 /* plain css ****/
 
 .navigation{
@@ -155,6 +157,7 @@ a {
 
 .bg-white {
   background-color: #fff;
+  border-bottom: 1px solid rgba(60, 63, 70, 0.208);
 }
 
 header, .banner {
@@ -246,8 +249,7 @@ h2,h3,h4,h5{
   overflow-x: hidden;
   transition: 0.5s;
   padding: 1rem 0.5rem;
-  
-  
+   
 }
 
 .active-nav li {
@@ -300,6 +302,9 @@ h2,h3,h4,h5{
   background-color: #fff ;
 }
 
+.logo-white {
+  display: none; 
+}
 
   
  /*Medium devices (tablets, 768px and up)*/
@@ -309,11 +314,7 @@ h2,h3,h4,h5{
     font-size: 1.2rem;
   }
 
-  header{
-    background: linear-gradient(to right, rgba(255, 25, 0, 0.688), rgba(236, 83, 66, 0.648)), url('./images/events.jpeg');
-    background-position: center;
-    background-size: cover;
-  }
+
   .head{
     display: flex;
     flex-direction: column;
@@ -351,13 +352,23 @@ h2,h3,h4,h5{
     padding: 1rem; 
   }
 
+  
+a {
+  text-decoration: none;
+  transition:color 0.2s;
+  color: #272a31;
+}
+
+a:hover{
+  color: #ec5242;
+}
+
+
   .navigation .nav-list li{
     transition: 6ms all ease;
     cursor: pointer;
   }
-  .navigation .nav-list li:hover {
-    color: #ec5242;
-    }
+  
   .navigation .nav-logo {
     width: 70%;
     height: auto;
@@ -444,7 +455,10 @@ h2,h3,h4,h5{
 
   .banner {
     padding:  10rem 6rem;
-    
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.887), rgba(255, 255, 255, 0.601)), url('./images/alex.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .grid-speaker{
@@ -452,6 +466,23 @@ h2,h3,h4,h5{
     grid-template-columns: auto auto;
   }
 
+  .social-icon {
+    width: 20px;
+    height: 20px;
+    transition: color 0.2s;
+  }
+  
+  .social-icon:hover {
+    color: #ec5242;
+
+  }
+  .text-social{
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  .text-social:hover{
+    color: #ec5242;
+  }
   /* about page **/
 
   .eventpic-box {
@@ -523,5 +554,8 @@ h2,h3,h4,h5{
   .bg-socialbox {
     background-color: #272a31;
   }
- 
+  /* .logo-back{
+    visibility:hidden;
+  }
+  */
 }
