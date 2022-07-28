@@ -1,67 +1,60 @@
+const speaker = [
 
-let speaker = [
+  {
+    image: 'images/aisha.jpg',
+    name: 'Aicha Johnson',
+    profession: 'Software engineer',
+    details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
 
-    { 
-        image : 'images/aisha.jpg',
-        name: 'Aicha Johnson',
-        profession: 'Software engineer',
-        details:'Magna reprehenderit id eu sit enim ex. Id minim ess'
+  },
 
-    },
-    
-    { 
-        image : 'images/flake.jpg',
-        name: 'Robert Gisky',
-        profession: 'Head executive of Google',
-        details:'Magna reprehenderit id eu sit enim ex. Id minim ess'
+  {
+    image: 'images/flake.jpg',
+    name: 'Robert Gisky',
+    profession: 'Head executive of Google',
+    details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
 
-    },
-    
-    { 
-        image : 'images/rik.jpg',
-        name: 'Habib Diallo',
-        profession: ' Techcnical recruiter at AfriqLeaders',
-        details:'Magna reprehenderit id eu sit enim ex. Id minim ess'
+  },
 
-    },
-    
-    { 
-        image : 'images/rik.jpg',
-        name: 'Moussa Diang',
-        profession: 'Content writter at Freecodecamp',
-        details:'Magna reprehenderit id eu sit enim ex. Id minim ess'
+  {
+    image: 'images/rik.jpg',
+    name: 'Habib Diallo',
+    profession: ' Techcnical recruiter at AfriqLeaders',
+    details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
 
-    },
-    
-    { 
-        image : 'images/rik.jpg',
-        name: 'David simth',
-        profession: ' Software developper at Squarecode',
-        details:'Magna reprehenderit id eu sit enim ex. Id minim ess'
+  },
 
-    },
-    
-    { 
-        image : 'images/rik.jpg',
-        name: 'Lesley hae',
-        profession: 'Ceo of Africa Electronics Developers ',
-        details:'Magna reprehenderit id eu sit enim ex. Id minim ess'
+  {
+    image: 'images/rik.jpg',
+    name: 'Moussa Diang',
+    profession: 'Content writter at Freecodecamp',
+    details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
 
-    },
+  },
 
-]
+  {
+    image: 'images/rik.jpg',
+    name: 'David simth',
+    profession: ' Software developper at Squarecode',
+    details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
 
+  },
+
+  {
+    image: 'images/rik.jpg',
+    name: 'Lesley hae',
+    profession: 'Ceo of Africa Electronics Developers',
+    details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
+
+  },
+
+];
 
 const grid = document.getElementById('grid-speaker');
 const ctnGrid = document.getElementById('ctn-grid-speaker');
 
-
-
-   function loadSpeakers(){
-
-      let speakers = speaker.map( (item) =>{
-         
-        return `<div class='speaker-box py-3'>
+function loadSpeakers() {
+  const speakers = speaker.map((item) => `<div class='speaker-box py-3'>
         <div class='box-img'>
           <img src='${item.image}' class='img-profile'>  
         </div>
@@ -71,17 +64,13 @@ const ctnGrid = document.getElementById('ctn-grid-speaker');
         <div class='lines '> </div>
         <small>${item.details}</small> 
       </div>
-    </div>`;
-      
+    </div>`).join('');
 
-      }).join('');
-      
-      grid.innerHTML = speakers;
+  grid.innerHTML = speakers;
+}
 
-   }
+document.addEventListener('DOMContentLoaded', (e) => {
+  e.preventDefault();
 
-   document.addEventListener('DOMContentLoaded', (e) =>{
-    e.preventDefault();
-       
-        loadSpeakers();
-   });
+  loadSpeakers();
+});
