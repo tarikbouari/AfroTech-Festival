@@ -15,4 +15,5 @@ closeBtn.addEventListener('click', () => {
   closeBtn.style.visibility = 'hidden';
   closeBtn.classList.remove('close-active');
   navList.style.width = '0';
+  window.location.reload();
 });
