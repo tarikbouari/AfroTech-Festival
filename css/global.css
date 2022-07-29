@@ -100,7 +100,7 @@ h5 {
 }
 
 .img-profile {
-  width: 100px;
+  width: auto;
   height: 100px;
 }
 
@@ -392,6 +392,15 @@ header,
 
   .arrow-down {
     display: none;
+  }
+
+  .icon-left {
+    transition: outline 0.3ms;
+    cursor: pointer;
+  }
+
+  .icon-left:hover {
+    outline: 1px solid #fff;
   }
 
   .box-logo {
