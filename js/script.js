@@ -1,7 +1,7 @@
 const speaker = [
 
   {
-    image: 'images/aisha.jpg',
+    image: './images/aisha.jpg',
     name: 'Aicha Johnson',
     profession: 'Software engineer',
     details: 'Magna reprehenderit id eu sit enim ex. Id minim ess',
@@ -51,11 +51,12 @@ const speaker = [
 ];
 
 const grid = document.getElementById('grid-speaker');
+const speakerClass = document.cerete
 
 function loadSpeakers() {
-  const speakers = speaker.map((item) => `<div class='speaker-box py-3'>
+  const speakers = speaker.map((item) => `<article class='speaker-box py-3'>
         <div class='box-img'>
-          <img src='${item.image}' class='img-profile'>  
+          <img src='${item.image}' class='img-profile' alt="profile-image">  
         </div>
       <div class='paragraph text-start d-flex flex-column'>
         <h5 class='mb-0'>${item.name}</h5>
@@ -63,7 +64,7 @@ function loadSpeakers() {
         <div class='lines '> </div>
         <small>${item.details}</small> 
       </div>
-    </div>`).join('');
+    </article>`).join('');
 
   grid.innerHTML = speakers;
 }

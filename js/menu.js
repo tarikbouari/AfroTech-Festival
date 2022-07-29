@@ -6,7 +6,6 @@ menu.addEventListener('click', () => {
   navList.classList.add('active-nav');
   closeBtn.classList.add('close-active');
   closeBtn.style.visibility = 'visible';
-  // navList.style.transition = ".5s";
   navList.style.width = '100%';
 });
 

@@ -21,7 +21,7 @@
     "ignorePatterns": [
       "dist/",
       "build/",
-      "js/"
+      "js/Bootstrap/"
     
     ]
   }
