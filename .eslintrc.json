@@ -20,6 +20,8 @@
     },
     "ignorePatterns": [
       "dist/",
-      "build/"
+      "build/",
+      "js/Bootstrap/"
+    
     ]
   }
