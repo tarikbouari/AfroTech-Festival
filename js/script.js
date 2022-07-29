@@ -51,7 +51,6 @@ const speaker = [
 ];
 
 const grid = document.getElementById('grid-speaker');
-const speakerClass = document.cerete
 
 function loadSpeakers() {
   const speakers = speaker.map((item) => `<article class='speaker-box py-3'>
