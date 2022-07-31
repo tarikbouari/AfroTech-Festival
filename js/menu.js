@@ -15,8 +15,9 @@ menu.forEach( (menuBtn) => {
 
 
 closeBtn.addEventListener('click', () => {
+  // navList.style.transform ='translateX(-100%)';
   closeBtn.style.visibility = 'hidden';
   closeBtn.classList.remove('close-active');
-  window.location.reload()
+   window.location.reload();
 
 });

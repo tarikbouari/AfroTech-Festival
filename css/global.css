@@ -243,7 +243,7 @@ header,
   transform: translateX(-100%);
   padding-left: 0 !important;
   font-size: x-large;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 .active-navlist {
@@ -359,10 +359,6 @@ header,
     color: #272a31;
   }
 
-  /* a:hover {
-    color: #ec5242;
-  } */
-
   .nav-list li {
     transition: 6ms all ease;
     cursor: pointer;
@@ -408,6 +404,7 @@ header,
     width: 70px;
   }
 
+
   .line {
     width: 5%;
     height: 3px;
@@ -420,7 +417,7 @@ header,
   }
 
   .icon-left {
-    transition: outline 0.3ms;
+    transition: outline 0.5ms;
     cursor: pointer;
   }
 
@@ -498,6 +495,14 @@ header,
 
   .text-social:hover {
     color: #ec5242;
+  }
+
+  .patners .icon {
+    transition: transform 0.4s;
+  }
+
+  .patners .icon:hover {
+    transform: scale(1.7);
   }
 
   /* about page **/
