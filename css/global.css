@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/cocogoose');
+/* @import url('http://fonts.cdnfonts.com/css/cocogoose'); */
 @import url('./Bootstrap/bootstrap.css');
 
 * {
@@ -29,6 +29,7 @@ a {
 
 a:hover {
   color: #ec5242;
+  cursor: pointer;
 }
 
 h2,
@@ -230,36 +231,46 @@ header,
 }
 
 .nav-list {
-  display: none;
-}
-
-.active-nav {
-  display: block;
-  background-color: #272a31;
   position: absolute;
   top: 0;
-  width: 0;
   left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #3c3f46;
   height: 100vh;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding: 1rem 0.5rem;
+  transform: translateX(-100%);
+  padding-left: 0 !important;
+  font-size: x-large;
+  transition: 0.3s;
 }
 
-.active-nav li {
-  padding: 2rem 1rem;
-  color: white;
-  font-size: 1.5rem;
+.active-navlist {
+  transform: translateX(0);
+}
+
+.nav-list li {
+  padding: 2rem !important;
   transition: 0.5s;
+}
+
+.nav-list li:hover {
+  background-color: #ec5242;
+}
+
+.nav-list li a:hover {
+  color: #fff;
 }
 
 .close-active {
   position: absolute;
-  top: 20px;
+  top: 30px;
   z-index: 5;
   right: 34px;
   width: 30px;
   height: 30px;
+  transition-delay: 0.5s;
 }
 
 .closebtn {
@@ -268,6 +279,7 @@ header,
 
 .active-nav li:hover {
   background-color: #ec5342c4;
+  cursor: pointer;
 }
 
 .campain {
@@ -329,14 +341,16 @@ header,
 
   .navigation .nav-list {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     list-style: none;
     gap: 2rem;
     align-items: center;
-  }
-
-  .nav-list li {
-    padding: 1rem;
+    height: inherit;
+    top: inherit;
+    position: inherit;
+    background-color: #fff;
+    transform: inherit;
   }
 
   a {
@@ -345,13 +359,24 @@ header,
     color: #272a31;
   }
 
-  a:hover {
+  /* a:hover {
     color: #ec5242;
-  }
+  } */
 
-  .navigation .nav-list li {
+  .nav-list li {
     transition: 6ms all ease;
     cursor: pointer;
+    padding: 1rem !important;
+    font-size: 1.2rem;
+  }
+
+  .nav-list li:hover {
+    cursor: pointer;
+    background-color: #fff;
+  }
+
+  .nav-list li a:hover {
+    color: #ec5242;
   }
 
   .navigation .nav-logo {
