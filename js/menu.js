@@ -1,18 +1,19 @@
-const menu = document.getElementById('hamburger');
-const navList = document.getElementById('nav-list');
-const closeBtn = document.getElementById('close');
+let menu = document.querySelectorAll(".bar");
 
-menu.addEventListener('click', () => {
-  navList.classList.add('active-nav');
-  closeBtn.classList.add('close-active');
-  closeBtn.style.visibility = 'visible';
-  navList.style.width = '100%';
+const navList = document.getElementById("nav-list");
+const closeBtn = document.getElementById("close");
+
+menu.forEach((menuBtn) => {
+  menuBtn.addEventListener("click", () => {
+    navList.classList.add("active-navlist");
+    closeBtn.classList.add("close-active");
+    closeBtn.style.visibility = "visible";
+  });
 });
 
-closeBtn.addEventListener('click', () => {
-  navList.classList.remove('active-nav');
-  closeBtn.style.visibility = 'hidden';
-  closeBtn.classList.remove('close-active');
-  navList.style.width = '0';
+closeBtn.addEventListener("click", () => {
+  navList.style.transform = "translateX(-100%)";
+  closeBtn.style.visibility = "hidden";
+  closeBtn.classList.remove("close-active");
   window.location.reload();
 });
