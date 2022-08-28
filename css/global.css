@@ -86,7 +86,7 @@ h5 {
 }
 
 .icon2 {
-  width: 25%;
+  width: 20%;
   height: auto;
   color: #fff;
 }
@@ -119,6 +119,8 @@ h5 {
   font-family: 'Lato', sans-serif;
   color: #ec5242;
   margin-left: 14px;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 .sm-red {
@@ -309,10 +311,7 @@ header,
 .logo-white {
   display: none;
 }
-.pgram span {
-  font-size: 1.5rem;
-  text-align: left;
-}
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -578,5 +577,17 @@ header,
 
   .bg-socialbox {
     background-color: #272a31;
+  }
+  .icon2 {
+    width: 25%;
+    height: auto;
+    color: #fff;
+  }
+  .box-program span {
+    font-family: 'Lato', sans-serif;
+    color: #ec5242;
+    text-align: center;
+    margin-left: 0; 
+    font-size: 1rem;
   }
 }
