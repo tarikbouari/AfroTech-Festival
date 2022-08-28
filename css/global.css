@@ -107,6 +107,7 @@ h5 {
 
 .box-program {
   background-color: #3c3f46;
+  
 }
 
 .mail {
@@ -307,6 +308,10 @@ header,
 
 .logo-white {
   display: none;
+}
+.pgram span {
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 /* Medium devices (tablets, 768px and up) */
