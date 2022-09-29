@@ -355,6 +355,7 @@ header,
     position: inherit;
     background-color: #fff;
     transform: inherit;
+    width: 60%;
   }
 
   a {
@@ -431,12 +432,12 @@ header,
 
   .box-logo {
     display: flex;
-    gap: 1rem;
   }
 
   .box-menu {
     display: flex;
     gap: 3rem;
+    justify-content: space-between;
   }
 
   .campain {
