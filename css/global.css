@@ -107,7 +107,6 @@ h5 {
 
 .box-program {
   background-color: #3c3f46;
-  
 }
 
 .mail {
@@ -409,7 +408,6 @@ header,
     width: 70px;
   }
 
-
   .line {
     width: 5%;
     height: 3px;
@@ -579,16 +577,18 @@ header,
   .bg-socialbox {
     background-color: #272a31;
   }
+
   .icon2 {
     width: 25%;
     height: auto;
     color: #fff;
   }
+
   .box-program span {
     font-family: 'Lato', sans-serif;
     color: #ec5242;
     text-align: center;
-    margin-left: 0; 
+    margin-left: 0;
     font-size: 1rem;
   }
 }

@@ -69,7 +69,6 @@ function loadSpeakers() {
 }
 
 document.addEventListener('DOMContentLoaded', (e) => {
- e.preventDefault();
+  e.preventDefault();
   loadSpeakers();
-
 });
