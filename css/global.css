@@ -107,7 +107,6 @@ h5 {
 
 .box-program {
   background-color: #3c3f46;
-  
 }
 
 .mail {
@@ -312,7 +311,6 @@ header,
   display: none;
 }
 
-
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
@@ -355,6 +353,7 @@ header,
     position: inherit;
     background-color: #fff;
     transform: inherit;
+    width: 60%;
   }
 
   a {
@@ -408,7 +407,6 @@ header,
     width: 70px;
   }
 
-
   .line {
     width: 5%;
     height: 3px;
@@ -431,12 +429,12 @@ header,
 
   .box-logo {
     display: flex;
-    gap: 1rem;
   }
 
   .box-menu {
     display: flex;
     gap: 3rem;
+    justify-content: space-between;
   }
 
   .campain {
@@ -578,16 +576,18 @@ header,
   .bg-socialbox {
     background-color: #272a31;
   }
+
   .icon2 {
     width: 25%;
     height: auto;
     color: #fff;
   }
+
   .box-program span {
     font-family: 'Lato', sans-serif;
     color: #ec5242;
     text-align: center;
-    margin-left: 0; 
+    margin-left: 0;
     font-size: 1rem;
   }
 }
